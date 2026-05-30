@@ -116,35 +116,3 @@ Max-AR/
 └── docs/
 ```
 
-## 🎓 Team
-
-- **Technical Lead**: Project coordination, Maximo setup, API integration
-- **AR/Unity Developer**: HoloLens app, spatial mapping, MRTK
-- **Voice AI Engineer**: watsonx.ai NLP, FastAPI bridge
-- **CV/Offline Engineer**: Watson Studio CV, offline sync, SQLite
-
-## 📅 Demo Day: March 30, 2026
-
-**8-Minute Demo Flow:**
-1. Asset identification via CV (0:00-1:30)
-2. AR overlay with live data (1:30-3:00)
-3. Voice WO creation (3:00-6:00)
-4. Offline mode demonstration (6:00-7:00)
-5. Metrics and ROI (7:00-8:00)
-
-## 🔐 Credentials Required
-
-- IBM Cloud API Key (watsonx.ai access)
-- watsonx.ai Project ID
-- Maximo API Key (or use mock server)
-- Azure Spatial Anchors credentials (for HoloLens)
-
-## 📞 Support
-
-i3 Technologies | IBM Silver Partner CEID 7sq30  
-Philip Mukiti | March 2026
-
----
-
-**Target Clients**: 67 organizations across 6 sectors in East Africa  
-**First Pilots**: KenGen Nairobi + KPC Kenya Pipeline Company
