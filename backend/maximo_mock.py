@@ -48,10 +48,41 @@ async def create_wo(request:Request):
 def get_jobplans():
     return {"member":[
       {"jobplanid":"JP-TR-001","description":"Transformer inspection procedure",
-       "jpnum":"JP-TR-001","jptask":[{"taskid":10,"description":"Visual inspection"},
-       {"taskid":20,"description":"Check oil level"},{"taskid":30,"description":"Test protection relay"},
-       {"taskid":40,"description":"Record all readings in Maximo"}]}
-    ],"totalCount":1}
+       "jpnum":"JP-TR-001","jptask":[
+         {"taskid":10,"description":"Visual inspection"},
+         {"taskid":20,"description":"Check oil level"},
+         {"taskid":30,"description":"Test protection relay"},
+         {"taskid":40,"description":"Record all readings in Maximo"}
+       ]},
+      {"jobplanid":"JP-GEN-001","description":"Generator inspection procedure",
+       "jpnum":"JP-GEN-001","jptask":[
+         {"taskid":10,"description":"Check engine oil and coolant level"},
+         {"taskid":20,"description":"Inspect for leaks and abnormal wear"},
+         {"taskid":30,"description":"Measure vibration and record limits"},
+         {"taskid":40,"description":"Record hours and maintenance notes in Maximo"}
+       ]},
+      {"jobplanid":"JP-SWG-001","description":"Switchgear Bay 7 inspection procedure",
+       "jpnum":"JP-SWG-001","jptask":[
+         {"taskid":10,"description":"Thermal scan busbar joints and terminations"},
+         {"taskid":20,"description":"Check SF6/vacuum pressure indicators"},
+         {"taskid":30,"description":"Review protection relay event log"},
+         {"taskid":40,"description":"Record defects and readiness for return to service"}
+       ]},
+      {"jobplanid":"JP-PMP-001","description":"Pump seal and pressure inspection procedure",
+       "jpnum":"JP-PMP-001","jptask":[
+         {"taskid":10,"description":"Inspect mechanical seal for leakage/drip"},
+         {"taskid":20,"description":"Check suction/discharge pressures and flow stability"},
+         {"taskid":30,"description":"Measure motor current and imbalance"},
+         {"taskid":40,"description":"Record readings and maintenance actions in Maximo"}
+       ]},
+      {"jobplanid":"JP-VLV-001","description":"Valve operation and packing leak inspection procedure",
+       "jpnum":"JP-VLV-001","jptask":[
+         {"taskid":10,"description":"Operate handwheel through full stroke and verify indicators"},
+         {"taskid":20,"description":"Inspect stem packing for external leak"},
+         {"taskid":30,"description":"Plan controlled pressure test after repair"},
+         {"taskid":40,"description":"Record test results and return-to-service notes in Maximo"}
+       ]}
+    ],"totalCount":5}
 
 @app.get("/health")
 def health():
